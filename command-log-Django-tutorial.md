@@ -1,24 +1,24 @@
 
-..\DjangoStartProject>python --version
+``..\DjangoStartProject>python --version``</br>
 Python 3.10.10
 
-..\DjangoStartProject>python -m venv .venv
+``..\DjangoStartProject>python -m venv .venv``
 
-..\DjangoStartProject>.\.venv\Scripts\activate
+``..\DjangoStartProject>.\.venv\Scripts\activate``
 
-(.venv) ..\DjangoStartProject>python -m pip install --upgrade pip
-Requirement already satisfied: pip in ..\djangostartproject\.venv\lib\site-packages (22.3.1)
-Collecting pip
-  Using cached pip-23.1.2-py3-none-any.whl (2.1 MB)
-Installing collected packages: pip
-  Attempting uninstall: pip
-    Found existing installation: pip 22.3.1
-    Uninstalling pip-22.3.1:
-      Successfully uninstalled pip-22.3.1
-Successfully installed pip-23.1.2
+``(.venv) ..\DjangoStartProject>python -m pip install --upgrade pip``<br>
+Requirement already satisfied: pip in ..\djangostartproject\.venv\lib\site-packages (22.3.1)<br>
+Collecting pip<br>
+  Using cached pip-23.1.2-py3-none-any.whl (2.1 MB)<br>
+Installing collected packages: pip<br>
+  Attempting uninstall: pip<br>
+    Found existing installation: pip 22.3.1<br>
+    Uninstalling pip-22.3.1:<br>
+      Successfully uninstalled pip-22.3.1<br>
+Successfully installed pip-23.1.2<br>
 
-(.venv) ..\DjangoStartProject>python -m pip install Django
-Collecting Django
+``(.venv) ..\DjangoStartProject>python -m pip install Django``<br/>
+Collecting Django<br/>
   Downloading Django-4.2.1-py3-none-any.whl (8.0 MB)
      ---------------------------------------- 8.0/8.0 MB 2.0 MB/s eta 0:00:00
 Collecting asgiref<4,>=3.6.0 (from Django)
