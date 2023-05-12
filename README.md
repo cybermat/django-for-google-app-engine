@@ -102,8 +102,11 @@ Just a few of the steps in the Google documentation ***Running Django on the App
 3.  Use the gcloud CLI in the Google Cloud console to upload the Django project. 
     + [Steps for uploading the Django project to the Google Cloud, ready to be deployed](Upload-project-with-Google-Cloud-Console.md).
 4.  Deploy the project as shown in steps 1 to 5 under the heading **Deploy the app to the App Engine standard environment** - except that: 
-    + Upload the directory .... 
-    + After editing the ***app.yaml*** file to include the value of the environment variable *APPENGINE_URL* (the value is generated when the project is first run in the GAE), delete the directory of the uploaded files, then upload the entire directory again. Otherwise the original **app.yaml** file will be kept and a new file with a version number is created, which isn't what is wanted.
+    + After editing the ***app.yaml*** file to include the value of the environment variable *APPENGINE_URL* (the value is generated when the project is first run in the GAE), delete the destination directory with the uploaded files, then upload the entire source directory again. Otherwise the original **app.yaml** file will be kept and a new file with a version number is created, which isn't what is wanted.
+    + Note that the Google document says "upload the app by running the command ``gcloud app deploy`` which deploys the app". 
+    + The instructions above describe "uploading" the project as the process of copying you project from a local development computer into the Google Cloud Console. The command ''gcloud app deploy`` is run after the projected is uploaded to deploy it in the Google App Engine. 
+    + If everything works correctly, the deployed incomplete app will display the same "confirmation" screen in the Google App Engine that it displays in the local development server - 
+![Django-generated-project-upload-for-deployed-OK](https://github.com/cybermat/django-for-google-app-engine/assets/2298091/11c17cfa-cc4c-4ed7-a8b7-3020faed5b27)
 
 This is enough of the steps in the Google documentation **Running Django on the App Engine standard environment** to make sure you can deploy and run part of a Django project with a minimum of steps - and a reduced scope to explore if any error does happen. 
 
