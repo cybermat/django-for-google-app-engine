@@ -51,6 +51,21 @@ Developing Django projects for Google App engine - Software tools and skills to 
 A Django project with a requirements.txt file able to be started in the development environment was created by the commands shown in the command log file: 
 **[command-log-Django-tutorial.md](command-log-Django-tutorial.md)**.
 
+Visual Studio Code can be used to edit the Django project created with the commands shown. 
+
+Note that though it might seem reasonable to open the folder **mysite** with Visual Studio Code, it works better to open the parent folder - the folder that contains both the project folder **mysite** and the virtual environment folder **.venv**. 
+![Django-opening-with-VS-Code](https://github.com/cybermat/django-for-google-app-engine/assets/2298091/e5a3046c-1b20-4e4e-abf4-34e29e684b0f)
+After opening the parent folder, Visual Studio Code can expand the sub-directories, listing the files within **mysite** and also shows that the virtual environment folder **.venv** is in the same parent folder as the project.
+![Django-open-in-VSCode-3](https://github.com/cybermat/django-for-google-app-engine/assets/2298091/4ba03058-d327-41b6-aeb4-a70419c45bc5)
+The above screen image is the top-left corner of the Visual Studio Code application.
+
+The following image is the entire screen image. Notice some parts of the screen -  
++ On the left list of folders and files, the file **requirements.txt** has been selected. This opens the file for editing. The top-right of the screen is the contents of the file. 
++ The contents of the **requirements.txt** have been changed, adding the Python libraries needed to deploy the project to the Google App Engine. 
++ On the bottom-right of that window containing the **requirements.txt** file, Visual Studio Code displays a button labelled ***Create Environment...***. Selecting this button leads to a few options being displayed with which to rebuild the **.venv** virtual environment folder. This is useful if changes have been made to list of libraries required for the project. Visual Studio Code by default creates/recreates the virtual environemt in a folder named **.venv** regardless of what name you chose for creating the virtual environment when you created the project. 
++ The bottom-right of the screen image is a command console - opened by selcting the **terminal** menu at the top of the screen. The command console shows that Visual Studio Code has activated the virtual environment - after rebuilding the virtual environement folder. Then a command was entered to run the project on the local development server. 
+![Django-generated-project-for-GAE-runserver](https://github.com/cybermat/django-for-google-app-engine/assets/2298091/c91ccddf-5058-4089-aea1-b432b92e24f5)
+
 To ensure the project can be deployed and started in Google App Engine standard environment, some changes are made to two of the generated files: 
 1. The ***requirements.txt*** file, and
 2. The ***settings.py*** file. 
