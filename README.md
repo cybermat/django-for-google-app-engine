@@ -48,8 +48,8 @@ Developing Django projects for Google App engine - Software tools and skills to 
             at https://cloud.google.com/python/django/appengine#gcloud_2 
 6. Adjustments to the first python modules for a Django project so they can be deployed to Google App Engine standard environment.
 
-A Django project able to be started in the development environment was completed by the commands shown in the file: 
-**creation of a basic Django project and a requirements.txt file**.
+A Django project with a requirements.txt file able to be started in the development environment was created by the commands shown in the command log file: 
+**[command-log-Django-tutorial.md](command-log-Django-tutorial.md)**.
 
 To ensure the project can be deployed and started in Google App Engine standard environment, some changes are made to two of the generated files: 
 1. The ***requirements.txt*** file, and
