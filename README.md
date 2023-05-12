@@ -80,10 +80,12 @@ Just a few of the steps in the Google documentation ***Running Django on the App
     + Enable the Cloud SQL Admin API, Secret Manager, and Cloud Build APIs.
 2.  The last 3 steps under the heading **Run the app on your local computer** -
     + Start the Django web server: `python manage.py runserver`
-    + In your browser, go to http://localhost:8080
+    + In your browser, go to ``http://localhost:8080``
+    + The Django tutorial project displays an introductory web page to confirm that it is running successfully - 
+      ![Django-generated-project](https://github.com/cybermat/django-for-google-app-engine/assets/2298091/20d77a26-a7f6-4f6c-9a27-71f313292dd0)
     + Press Ctrl+C to stop the local web server.
 3.  Use the gcloud CLI in the Google Cloud console to upload the Django project. 
-    + (Image files show the upload process within the Google Cloud Console).
+    + [Steps for uploading the Django project to the Google Cloud, ready to be deployed](Upload-project-with-Google-Cloud-Console.md).
 4.  Deploy the project as shown in steps 1 to 5 under the heading **Deploy the app to the App Engine standard environment** - except that: 
     + Upload the directory .... 
     + After editing the ***app.yaml*** file to include the value of the environment variable *APPENGINE_URL* (the value is generated when the project is first run in the GAE), delete the directory of the uploaded files, then upload the entire directory again. Otherwise the original **app.yaml** file will be kept and a new file with a version number is created, which isn't what is wanted.
